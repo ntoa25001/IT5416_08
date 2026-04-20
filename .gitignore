@@ -1,0 +1,15 @@
+# ignore toàn bộ
+data/*
+output/*
+
+# giữ lại folder
+!data/cifar/
+!data/svhn/
+!output/cifar/
+!output/svhn/
+
+# giữ file placeholder
+!data/cifar/.gitkeep
+!data/svhn/.gitkeep
+!output/cifar/.gitkeep
+!output/svhn/.gitkeep
