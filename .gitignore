@@ -1,15 +1,40 @@
-# ignore toàn bộ
-data/*
-output/*
+# Python environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# giữ lại folder
-!data/cifar/
-!data/svhn/
-!output/cifar/
-!output/svhn/
+# Jupyter
+.ipynb_checkpoints/
 
-# giữ file placeholder
-!data/cifar/.gitkeep
-!data/svhn/.gitkeep
-!output/cifar/.gitkeep
-!output/svhn/.gitkeep
+# Local config
+.env
+.DS_Store
+Thumbs.db
+
+# Datasets
+data/
+*.mat
+*.tar
+*.tar.gz
+*.zip
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Generated outputs
+output/
+*.npy
+*.npz
+
+# Logs
+*.log
+
+# Large intermediate files
+*.pkl
+*.pickle
