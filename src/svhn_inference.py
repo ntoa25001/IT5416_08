@@ -45,10 +45,11 @@ print("X shape:", X.shape)
 # =========================
 # 3. NORMALIZE (GIỐNG CIFAR)
 # =========================
+# NORMALIZE giống transform_test lúc Hưng train CIFAR-10
 X = X.astype(np.float32) / 255.0
 
-mean = np.array([0.5, 0.5, 0.5]).reshape(1, 3, 1, 1)
-std  = np.array([0.5, 0.5, 0.5]).reshape(1, 3, 1, 1)
+mean = np.array([0.4914, 0.4822, 0.4465], dtype=np.float32).reshape(1, 3, 1, 1)
+std  = np.array([0.2023, 0.1994, 0.2010], dtype=np.float32).reshape(1, 3, 1, 1)
 
 X = (X - mean) / std
 
